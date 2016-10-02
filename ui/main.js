@@ -24,6 +24,7 @@ button.onclick = function () {
     request.send(null);
 };
 
+
 // Submit name
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
@@ -53,7 +54,7 @@ submit.onclick = function () {
     // Make the request
     var nameInput = document.getElementById('name');
     var name = nameInput.value;
-    request.open('GET', 'http://coco98.imad.hasura-app.io/submit-name?name=' + name, true);
+    request.open('GET', 'http://bhuvaneshwarp.imad.hasura-app.io/submit-name?name=' + name, true);
     request.send(null);  
 
 };
