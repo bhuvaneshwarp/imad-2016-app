@@ -9,7 +9,7 @@ button.onclick = function(){
         if (request.readystate === XMLHttpRequest.DONE){
             //take some action
             if(request.status === 200){
-             var counter  =   request.responseText
+             var counter  =   request.responseText;
               var span = document.getElementById('count');
                span.innerHTML = counter.toString();
             }
@@ -17,7 +17,7 @@ button.onclick = function(){
         //not done yet
     };
     //make the request
-    request.open('GET', 'http://bhuvaneshwarp.imad.hasura-app.io/counter',true)
+    request.open('GET', 'http://bhuvaneshwarp.imad.hasura-app.io/counter',true);
     request.send(null);
    
 };
