@@ -17,6 +17,7 @@ button.onclick = function(){
         //not done yet
     };
     //make the request
-    request.open('GET', 'https://cloud.imad.hasura.io/code/home')
+    request.open('GET', 'http://bhuvaneshwarp.imad.hasura-app.io/counter',true)
+    request.send(null);
    
 };
